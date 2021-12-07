@@ -1,4 +1,108 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap'); */
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  /* font-family: 'Sora', sans-serif; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+/* NavBar */
+nav {
+  display: flex;
+  /* justify-content: space-evenly; */
+  height: 4.5rem;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+}
+
+.logo {
+  margin-top: 0.75rem;
+  margin-right: 0.1rem;
+  /* margin-left: 7rem; */
+}
+
+.mobile-logo {
+  display: none;
+}
+
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  /* margin-top: 1rem; */
+  /* margin-right: 2.5rem; */
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+button {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  align-items: center;
+  position: relative;
+  top: 0.75rem;
+  left: 40vw;
+  margin-left: 1rem;
+  border: none;
+  padding: 0.65rem;
+  border-radius: 8%;
+  /* word-spacing: 0.1rem; */
+  font-size: 500;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.menu-outline {
+  display: none;
+}
+
+.signup-button {
+  color: #a5adba;
+  background-color: #ffffff;
+}
+
+.signin-button {
+  background-color: #0052cc;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: 3.75rem;
+  }
+  .logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: flex;
+    margin: 0.75rem;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .menu-outline {
+    display: flex;
+    margin: 0.75rem;
+    position: absolute;
+    left: 80vw;
+    cursor: pointer;
+  }
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +139,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
