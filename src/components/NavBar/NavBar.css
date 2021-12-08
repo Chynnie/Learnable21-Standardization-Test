@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   height: 4.5rem;
+  background-color: #ffffff;
 }
 
 .nav-links {
@@ -105,6 +106,7 @@ button {
     width: 100%;
     position: absolute;
     top: 5rem;
+    background-color: #ffffff;
   }
 
   .nav-links {
@@ -157,5 +159,6 @@ button {
     left: 1.5rem;
     margin-top: 1rem;
     width: 83vw;
+    background-color: #ffffff;
   }
 }
