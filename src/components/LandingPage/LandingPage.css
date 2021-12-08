@@ -1,0 +1,24 @@
+main {
+  display: flex;
+  margin-left: 8rem;
+}
+
+.message h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+.message p {
+  padding-top: 1rem;
+}
+
+.relax-v1 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 22rem;
+  left: 23rem;
+  height: 90vh;
+  width: 50vw;
+}
