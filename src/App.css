@@ -6,15 +6,18 @@ body {
   /* font-family: 'Sora', sans-serif; */
   display: flex;
   flex-direction: column;
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
   /* justify-content: center; */
   /* align-items: center; */
   /* text-align: center; */
 }
 
 /* NavBar */
-nav {
+/* nav {
   display: flex;
-  /* justify-content: space-evenly; */
+  
   height: 4.5rem;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
@@ -23,7 +26,7 @@ nav {
 .logo {
   margin-top: 0.75rem;
   margin-right: 0.1rem;
-  /* margin-left: 7rem; */
+  
 }
 
 .mobile-logo {
@@ -33,18 +36,15 @@ nav {
 nav ul li {
   text-decoration: none;
   list-style: none;
-  /* margin-top: 1rem; */
-  /* margin-right: 2.5rem; */
+  
   display: inline-flex;
   align-items: center;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-}
+} */
 
-button {
-  /* display: flex; */
-  /* justify-content: flex-end; */
+/* button {
   align-items: center;
   position: relative;
   top: 0.75rem;
@@ -52,17 +52,16 @@ button {
   margin-left: 1rem;
   border: none;
   padding: 0.65rem;
-  border-radius: 8%;
-  /* word-spacing: 0.1rem; */
+  border-radius: 0.24rem;
   font-size: 500;
   font-family: 'Varela Round', sans-serif;
-}
+} */
 
-.menu-outline {
+/* .menu-outline {
   display: none;
-}
+} */
 
-.signup-button {
+/* .signup-button {
   color: #a5adba;
   background-color: #ffffff;
 }
@@ -70,9 +69,9 @@ button {
 .signin-button {
   background-color: #0052cc;
   color: #ffffff;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media screen and (max-width: 842px) {
   nav {
     height: 3.75rem;
   }
@@ -86,7 +85,7 @@ button {
   }
 
   nav ul li {
-    display: none;
+    display: flex;
   }
 
   button {
@@ -100,7 +99,7 @@ button {
     left: 80vw;
     cursor: pointer;
   }
-}
+} */
 
 /* .App {
   text-align: center;

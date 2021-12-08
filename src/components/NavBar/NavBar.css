@@ -1,0 +1,126 @@
+/* NavBar */
+.navbar {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  height: 4.5rem;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 10;
+}
+
+.logo {
+  margin-top: 0rem;
+  margin-right: 0.1rem;
+  margin-left: 0.5rem;
+  /* margin-left: 7rem; */
+}
+
+.mobile-logo {
+  display: none;
+}
+
+.nav-menu {
+  /* text-decoration: none; */
+  list-style: none;
+  /* margin-top: 1rem; */
+  /* margin-right: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 0.625rem;
+  align-items: center;
+  text-align: center;
+  /* padding: 0 1rem; */
+  margin-top: 0rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  /* height: 5rem; */
+}
+
+.nav-links {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: #091e42 !important;
+  font-weight: 450;
+}
+
+.nav-links:hover {
+  color: #a5adba !important;
+}
+
+.nav-links:active {
+  color: #0052cc !important;
+  transition: all 0.5s ease;
+}
+
+.menu-outline {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 3.75rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: flex;
+    margin-top: 0rem;
+    margin-left: 1rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 23.4375rem;
+    height: 24.75rem;
+    position: absolute;
+    top: -118.375rem;
+    left: 52.875rem;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #091e42 !important;
+    font-weight: 450;
+  }
+
+  .nav-links:hover {
+    color: #a5adba !important;
+  }
+
+  .nav-links:active {
+    color: #0052cc !important;
+    transition: all 0.5s ease;
+  }
+
+  button {
+    display: none;
+    /* text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.24rem;
+    width: 21.4375rem;
+    height: 2.5rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 450; */
+  }
+
+  .menu-outline {
+    display: flex;
+    margin-top: 0rem;
+    position: absolute;
+    left: 80vw;
+    cursor: pointer;
+  }
+}

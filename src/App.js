@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      <NavBar />
+      <Router>
+        <NavBar />
+      </Router>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

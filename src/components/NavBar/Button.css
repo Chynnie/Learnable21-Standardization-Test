@@ -1,0 +1,39 @@
+/* :root {
+  --primary: #0052cc;
+} */
+
+button {
+  align-items: center;
+  position: relative;
+  top: 0rem;
+  left: 30vw;
+  margin-left: 0.8rem;
+  border: none;
+  padding: 0.65rem;
+  border-radius: 0.24rem;
+  /* word-spacing: 0.1rem; */
+  font-size: 500;
+  font-family: 'Varela Round', sans-serif;
+  transition: all 0.3s ease-out;
+  font-weight: 450;
+}
+
+.signup-button {
+  color: #a5adba;
+  background-color: #ffffff;
+}
+
+.signin-button {
+  background-color: #0052cc;
+  color: #ffffff;
+}
+
+.signin-button:hover {
+  color: #0052cc;
+  background-color: #a5adba;
+}
+
+.signup-button:hover {
+  color: #0052cc;
+  background-color: #a5adba;
+}
