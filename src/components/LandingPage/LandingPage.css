@@ -1,19 +1,26 @@
+body {
+  background-image: url(./Background-Image.svg);
+  height: 250rem;
+}
+
 main {
   display: flex;
-  margin-left: 8rem;
 }
 
 .section1 {
   background-color: #ffffff;
   position: absolute;
   height: 56.25rem;
-  width: 45.614375rem;
+  width: 90vw;
+  line-height: 1.5rem;
+  margin-left: 8rem;
 }
 
 .message h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin-top: 8rem;
+  line-height: 3.5rem;
 }
 
 .message p {
@@ -25,7 +32,7 @@ main {
   justify-content: flex-start;
   position: relative;
   bottom: 25rem;
-  left: 23rem;
+  left: 25rem;
   height: 90vh;
   width: 50vw;
 }
@@ -38,6 +45,7 @@ main {
   width: 100%;
   top: 40rem;
   height: 82.4375rem;
+  line-height: 1.5rem;
 }
 
 .hr-message {
@@ -46,7 +54,7 @@ main {
 }
 
 .hr-message h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .hr-message p {
@@ -92,7 +100,134 @@ main {
   display: flex;
   flex-direction: column;
   position: absolute;
-  left: 10rem;
-  bottom: 10rem;
+  left: 15rem;
+  bottom: 8rem;
   box-shadow: -28px 46px 60px 0px rgba(9, 30, 66, 0.08);
+}
+
+.admin-section {
+  background-color: #ffffff;
+  display: flex;
+  position: absolute;
+  left: 0rem;
+  width: 100%;
+  top: 120rem;
+  line-height: 1.5rem;
+}
+
+.admin-log h1 {
+  margin: 8rem 5rem 2rem 8rem;
+  font-size: 2.5rem;
+}
+
+.admin-log p {
+  margin: 0 5rem 8rem 8rem;
+}
+
+.admin-sub {
+  margin: 3rem 5rem 5rem 5rem;
+  display: inline-flex;
+}
+
+.travel-log {
+  margin-right: 3rem;
+}
+
+.travel-log h3 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.asset {
+  margin-left: 3rem;
+}
+
+.asset h3 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.admin-report {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 18rem;
+  top: 25rem;
+  box-shadow: -28px 46px 60px 0px rgba(9, 30, 66, 0.08);
+  height: 32.5625rem;
+  width: 55.3125rem;
+}
+
+.finance-section {
+  display: flex;
+  position: absolute;
+  left: 0rem;
+  width: 100%;
+  top: 183rem;
+  line-height: 1.5rem;
+}
+
+.finance h1 {
+  margin: 8rem 5rem 2rem 8rem;
+  font-size: 2.5rem;
+}
+
+.finance p {
+  margin: 0 5rem 8rem 8rem;
+}
+
+.finance-sub {
+  margin: 3rem 5rem 5rem 5rem;
+  display: inline-flex;
+}
+
+.vouchers h3 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.vouchers {
+  margin-right: 3rem;
+}
+
+.payroll {
+  margin-left: 3rem;
+}
+
+.payroll h3 {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.finance-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 18rem;
+  top: 25rem;
+  box-shadow: -28px 46px 60px 0px rgba(9, 30, 66, 0.08);
+  height: 32.5625rem;
+  width: 55.3125rem;
+}
+
+.partnership {
+  position: absolute;
+  display: flex;
+  top: 255rem;
+  justify-content: center;
+  left: 12rem;
+}
+
+.footer {
+  width: 91rem;
+  height: 14rem;
+  position: absolute;
+  top: 275rem;
+  background-color: #091e42;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 8rem;
+  top: 5rem;
 }
