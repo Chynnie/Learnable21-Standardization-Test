@@ -6,14 +6,16 @@ import NavBar from './components/NavBar/NavBar';
 import Password from './components/SignInPage/Password';
 import SignIn from './components/SignInPage/SignIn';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
     <div>
       {/* <NavBar /> */}
       {/* <LandingPage /> */}
-      <SignIn />
+      {/* <SignIn /> */}
       {/* <Password /> */}
+      <Dashboard />
     </div>
   );
 }

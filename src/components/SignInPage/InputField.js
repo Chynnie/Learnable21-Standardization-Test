@@ -1,6 +1,6 @@
 import React from 'react'
 
-const InputField = ({type, value, placeholder, onChange, label}) => {
+const InputField = ({type, value, placeholder, onChange, label, className}) => {
   return (
     <input 
       type={type}
@@ -8,6 +8,7 @@ const InputField = ({type, value, placeholder, onChange, label}) => {
       value={value}
       onChange={onChange}
       label={label}
+      className={className}
     />
   )
 }

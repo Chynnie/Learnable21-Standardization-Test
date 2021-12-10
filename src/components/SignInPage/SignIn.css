@@ -17,7 +17,7 @@ body {
 }
 
 .sign-in-logo {
-  position: static;
+  position: absolute;
   left: 18.75%;
   right: 18.75%;
   top: 0%;
@@ -71,7 +71,7 @@ input {
   flex-direction: row;
   align-items: center;
   padding: 8px 12px;
-  position: static;
+  position: absolute;
   left: calc(50% - 400px / 2);
   background: #ffffff;
   box-sizing: border-box;
@@ -94,6 +94,7 @@ input {
   text-align: center;
   padding-right: 10.5rem;
   font-size: 1rem;
+  background-color: #f4f5f7;
 }
 
 .login-btn:hover {
@@ -102,7 +103,7 @@ input {
 }
 
 hr {
-  margin-top: 0rem;
+  margin-top: 2.5rem;
   margin-bottom: 0rem;
   top: 0rem;
   width: 25rem;
@@ -113,6 +114,11 @@ hr {
 .forgot-password {
   color: #0052cc;
   font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  color: #f4f5f7;
 }
 
 .signIn-footer {

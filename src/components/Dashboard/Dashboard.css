@@ -1,0 +1,258 @@
+* {
+  font-family: sans-serif;
+}
+
+/* Nav Bar */
+.nav-bar {
+  position: absolute;
+  width: 92rem;
+  height: 4.5rem;
+  left: 0px;
+  top: 0.02875rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(193, 199, 208, 0.4);
+}
+
+.nav-content {
+  position: absolute;
+  height: 32px;
+  left: 1.67%;
+  right: 1.67%;
+  top: calc(50% - 32px / 2);
+}
+
+/* Avatar */
+.avatar {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: 0rem;
+  top: 0rem;
+  border-radius: 6.5625rem;
+}
+
+/* TM Dashboard */
+.tm {
+  position: absolute;
+  width: 6.6875rem;
+  height: 1.5rem;
+  left: 14.0625rem;
+  top: calc(50% - 1.5rem / 2);
+  font-style: normal;
+  font-weight: 450;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #091e42;
+  /* flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 0rem 1rem; */
+}
+
+/* Separator */
+.separator {
+  position: absolute;
+  width: 0.0625;
+  left: 13rem;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  background: #c1c7d0;
+  /* flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0rem 1rem; */
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  width: 9rem;
+  height: 1.5rem;
+  left: 3rem;
+  top: 0.25rem;
+  /* flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0rem 1rem; */
+}
+
+/* Menu Bar */
+.menu-bar {
+  position: static;
+  width: 2rem;
+  height: 2rem;
+  left: 0rem;
+  top: 0rem;
+  /* flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0rem 1rem; */
+}
+
+/* Welcome Avatar */
+
+.welcome-avatar {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  left: 9.75rem;
+  top: 10.5rem;
+  border-radius: 6.5625rem;
+}
+
+/* Welcome Heading */
+.welcome h1 {
+  position: absolute;
+  height: 2.5rem;
+  width: auto;
+  left: 9.75rem;
+  right: 51.5625rem;
+  top: 17.5rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.1875rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  color: #091e42;
+}
+
+.welcome p {
+  position: absolute;
+  width: auto;
+  height: 1rem;
+  left: 9.75rem;
+  top: 21rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.todo h3 {
+  position: absolute;
+  width: auto;
+  height: 2rem;
+  left: 9.75rem;
+  top: 26rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #172b4d;
+}
+
+.todo-box1 {
+  position: absolute;
+  width: 46.5rem;
+  height: 5rem;
+  left: 9.75rem;
+  top: 28rem;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 1px;
+  padding-left: 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: #172b4d;
+}
+
+.todo-box2 {
+  position: absolute;
+  width: 46.5rem;
+  height: 5rem;
+  left: 9.75rem;
+  top: 33.5rem;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 1px;
+  padding-left: 4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+  color: #172b4d;
+}
+
+/* Circle */
+.circle1 {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 11rem;
+  top: 30rem;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+.circle2 {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 11rem;
+  top: 35.6rem;
+  background: #f3f3f3;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+
+/* label */
+.begin {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  left: 49rem;
+  top: 30rem;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+  color: #0052cc;
+}
+
+.begin:hover {
+  color: #a5adba;
+}
+
+.resume {
+  position: absolute;
+  width: 4.2rem;
+  height: 2rem;
+  left: 50.5rem;
+  top: 35.6rem;
+  padding: 0.6rem 0rem;
+  cursor: pointer;
+  color: #172b4d;
+  font-size: 0.85rem;
+}
+
+.resume:hover {
+  color: #ffffff;
+  background-color: #0052cc;
+}
+
+/* .todo1 {
+  position: absolute;
+  left: 9.75rem;
+  top: 28.5rem;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.todo2 {
+  position: absolute;
+  left: 9.75rem;
+  top: 34rem;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+} */
