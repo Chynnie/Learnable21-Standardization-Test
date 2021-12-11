@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../NavBar/NavBar';
 import './LandingPage.css'
 import Relax from './3_Relax V1.svg';
 import HrCard from './HR/HrCard';
@@ -13,7 +14,7 @@ import Footer from './Footer.svg';
 function LandingPage() {
   return (
     <div className='content'>
-
+      <NavBar />
       <main>
         <section className='section1'>
           <div className='message'>
@@ -26,9 +27,7 @@ function LandingPage() {
         <section className='hr-section'>
           <div className='hr-message'>
             <h1>Human Resources</h1>
-            <p>
-            Onboard new employees, manage the employee lifecycle <br/>and measure employee performance.
-            </p>
+            <p>Onboard new employees, manage the employee lifecycle <br/>and measure employee performance.</p>
           </div>
           <HrCard />
           <img src={Employee} alt="employee-directory" 
