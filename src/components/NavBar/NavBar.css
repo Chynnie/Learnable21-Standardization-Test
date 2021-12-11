@@ -1,171 +1,169 @@
-@media screen and (min-width: 1024px) {
-  * {
-    margin: 0rem;
-    padding: 0rem;
-    box-sizing: border-box;
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  background-color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 10rem;
+  list-style: none;
+  width: 30rem;
+  margin-top: 0.4rem;
+  margin-right: 23rem;
+  cursor: pointer;
+}
+
+.nav-links li {
+  padding-left: 2rem;
+  color: #091e42;
+  position: relative;
+  z-index: 10;
+}
+
+/* .nav-links li:hover {
+  padding-left: 2rem;
+  color: #a5adba;
+} */
+
+/* .nav-links:active {
+  color: #0052cc;
+  transition: all 0.5s ease;
+} */
+
+.desktop-logo {
+  margin-left: 8rem;
+  position: relative;
+  left: 0.5rem;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+button {
+  border: none;
+  align-items: center;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.24rem;
+  font-weight: 450;
+  font-size: 600;
+  position: relative;
+  z-index: 10;
+  left: 50vw;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #a5adba;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.sign-in {
+  background-color: #0052cc;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* .sign-in:hover {
+  color: #0052cc;
+  background-color: #a5adba;
+} */
+
+/* .sign-up:hover {
+  color: #0052cc;
+  background-color: #a5adba;
+} */
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-logo {
+    display: none;
   }
 
-  .navbar {
+  .mobile-logo {
     display: flex;
-    align-items: center;
-    height: 4.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .nav-mobile {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
     background-color: #ffffff;
   }
 
   .nav-links {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 10rem;
-    list-style: none;
-    width: 30rem;
-    margin-top: 0.4rem;
-    margin-right: 23rem;
-    cursor: pointer;
-  }
-
-  .nav-links li {
-    padding-left: 2rem;
-    color: #091e42;
-    position: relative;
-    z-index: 10;
-  }
-
-  .nav-links li:hover {
-    padding-left: 2rem;
-    color: #a5adba;
-  }
-
-  .nav-links:active {
-    color: #0052cc;
-    transition: all 0.5s ease;
-  }
-
-  .desktop-logo {
-    margin-left: 8rem;
-    position: relative;
-    left: 0.5rem;
-  }
-
-  .mobile-logo {
     display: none;
   }
 
-  button {
-    border: none;
-    align-items: center;
-    margin-right: 1rem;
-    padding: 0.5rem;
-    border-radius: 0.24rem;
-    font-weight: 450;
-    font-size: 600;
+  .nav-links-mobile {
     position: relative;
-    z-index: 10;
-    left: 50vw;
-    cursor: pointer;
-  }
-
-  .sign-up {
-    color: #a5adba;
+    display: block;
+    list-style: none;
     background-color: #ffffff;
-    cursor: pointer;
+    left: 1rem;
+    top: 1rem;
+    transition: all 0.5s ease-out;
+    width: 100%;
   }
 
-  .sign-in {
-    background-color: #0052cc;
-    color: #ffffff;
-    cursor: pointer;
-  }
-
-  .sign-in:hover {
-    color: #0052cc;
-    background-color: #a5adba;
-  }
-
-  .sign-up:hover {
-    color: #0052cc;
-    background-color: #a5adba;
-  }
-
-  .link {
-    text-decoration: none;
-    color: #ffffff;
+  .nav-links-mobile li {
+    padding: 1rem;
   }
 
   .mobile-menu {
+    display: block;
+    position: absolute;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    top: 1rem;
+    right: 2rem;
+  }
+
+  .sign-in,
+  .sign-up {
     display: none;
   }
 
-  @media screen and (max-width: 768px) {
-    .desktop-logo {
-      display: none;
-    }
+  .sign-up-mobile {
+    color: #a5adba;
+    background-color: #f4f5f7;
+    margin-top: 10%;
+  }
 
-    .mobile-logo {
-      display: flex;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-    }
+  .sign-in-mobile {
+    background-color: #0052cc;
+    color: #ffffff;
+  }
 
-    .nav-mobile {
-      width: 100%;
-      position: absolute;
-      top: 5rem;
-      background-color: #ffffff;
-    }
-
-    .nav-links {
-      display: none;
-    }
-
-    .nav-links-mobile {
-      position: relative;
-      display: block;
-      list-style: none;
-      background-color: #ffffff;
-      left: 1rem;
-      top: 1rem;
-      transition: all 0.5s ease-out;
-      width: 100%;
-    }
-
-    .nav-links-mobile li {
-      padding: 1rem;
-    }
-
-    .mobile-menu {
-      display: block;
-      position: absolute;
-      background-color: #ffffff;
-      border: none;
-      outline: none;
-      top: 1rem;
-      right: 2rem;
-    }
-
-    .sign-in,
-    .sign-up {
-      display: none;
-    }
-
-    .sign-up-mobile {
-      color: #a5adba;
-      background-color: #f4f5f7;
-      margin-top: 10%;
-    }
-
-    .sign-in-mobile {
-      background-color: #0052cc;
-      color: #ffffff;
-    }
-
-    button {
-      display: block;
-      left: 1.5rem;
-      margin-top: 1rem;
-      width: 83vw;
-      background-color: #ffffff;
-    }
+  button {
+    display: block;
+    left: 1.5rem;
+    margin-top: 1rem;
+    width: 83vw;
+    background-color: #ffffff;
   }
 }

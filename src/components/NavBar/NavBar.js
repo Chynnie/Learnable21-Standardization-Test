@@ -1,62 +1,49 @@
 import React, { useState } from 'react';
-import Group from './Group.svg'
-import Group1 from './Group1.svg';
-import Menu from './menu-outline.svg';
-import Cross from './cross.svg';
-import './NavBar.css'
-// import SignIn from '../SignInPage/SignIn';
-// import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import './NavBar.css';
+import group from '../../svg/Group.svg';
+import group1 from '../../svg/Group1.svg';
+import menu from '../../svg/menu-outline.svg';
+import cross from '../../svg/cross.svg';
 
 const NavBar = () => {
-
+  const history = useHistory();
   const [mobile, setMobile] = useState(false);
 
-  // const [signIn, setSignIn] = useState(false);
-
-  // const handleClick = () => {
-  //   if(!signIn) {
-  //     return <SignIn setSignIn={setSignIn(true)} />
-  //   }    
-  // }
-
   return (
-    <nav className='navbar'>
-      
-      <img
-        src={Group}
-        alt='logo'
-        className='desktop-logo'
-      />
+    <nav className="navbar">
+      <img src={group} alt="logo" className="desktop-logo" />
 
-      <img 
-        src={Group1}
-        alt='logo'
-        className='mobile-logo'
-      />
+      <img src={group1} alt="logo" className="mobile-logo" />
 
-      <div className='nav-mobile'>
-        <ul 
+      <div className="nav-mobile">
+        <ul
           className={mobile ? 'nav-links-mobile' : 'nav-links'}
-          onClick={() => setMobile(false)}  
+          onClick={() => setMobile(false)}
         >
           <li>Features</li>
           <li>About</li>
         </ul>
 
-        <button className={mobile ? 'sign-up-mobile' : 'sign-up'}>Sign Up</button>
-        <button className={mobile ? 'sign-in-mobile' : 'sign-in'}>
-          Sign In{/* <Link to='/signin' className='link'>Sign In</Link> */}
+        <button className={mobile ? 'sign-up-mobile' : 'sign-up'}>
+          Sign Up
+        </button>
+        <button
+          className={mobile ? 'sign-in-mobile' : 'sign-in'}
+          onClick={() => history.push('/sign_in')}
+        >
+          Sign In
         </button>
       </div>
 
       <img
-        src={ mobile ? ([Cross]) : ([Menu]) }
-        alt='menu'
-        className='mobile-menu'
-        onClick={() => setMobile(!mobile)} 
+        src={mobile ? [cross] : [menu]}
+        alt="menu"
+        className="mobile-menu"
+        onClick={() => setMobile(!mobile)}
       />
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

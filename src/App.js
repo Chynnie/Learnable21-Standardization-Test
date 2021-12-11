@@ -1,18 +1,8 @@
-// import logo from './logo.svg';
 import './App.css';
-import LandingPage from './components/LandingPage/LandingPage';
-import SignIn from './components/SignInPage/SignIn';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/Dashboard/Dashboard';
+import AppRoutes from './routes';
 
 function App() {
-  return (
-    <div>
-      <LandingPage/>
-      {/* <SignIn/> */}
-      {/* <Dashboard/> */}
-    </div>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
