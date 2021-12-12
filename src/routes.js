@@ -12,8 +12,6 @@ const AppRoutes = () => {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/sign_in" component={SignIn} />
           <Route exact path="/dashboard" component={Dashboard} />
-          {/* <Route exact path="/login" component={Login} />
-          <MainRoute exact path="/home" Component={Home} /> */}
         </Switch>
       </BrowserRouter>
     </>

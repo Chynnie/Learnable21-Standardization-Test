@@ -2,6 +2,14 @@
   font-family: sans-serif;
 }
 
+.dash-content {
+  max-width: 90rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Nav Bar */
 .nav-bar {
   position: absolute;
@@ -43,10 +51,10 @@
   font-size: 1rem;
   line-height: 1.5rem;
   color: #091e42;
-  /* flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 0rem 1rem; */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 0rem 1rem;
 }
 
 /* Separator */
@@ -57,10 +65,10 @@
   top: 0.25rem;
   bottom: 0.25rem;
   background: #c1c7d0;
-  /* flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0rem 1rem; */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0rem 1rem;
 }
 
 /* Logo */
@@ -70,10 +78,10 @@
   height: 1.5rem;
   left: 3rem;
   top: 0.25rem;
-  /* flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0rem 1rem; */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0rem 1rem;
 }
 
 /* Menu Bar */
@@ -100,11 +108,22 @@
   border-radius: 6.5625rem;
 }
 
-/* Welcome Heading */
+/* Welcome Section */
+.welcome {
+  width: 28.6875rem;
+  left: 9.75rem;
+  right: 51.5625rem;
+  top: 17.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .welcome h1 {
   position: absolute;
-  height: 2.5rem;
-  width: auto;
+  height: auto;
+  width: 28.6875rem;
   left: 9.75rem;
   right: 51.5625rem;
   top: 17.5rem;
@@ -120,7 +139,7 @@
 .welcome p {
   position: absolute;
   width: auto;
-  height: 1rem;
+  height: auto;
   left: 9.75rem;
   top: 21rem;
   font-style: normal;
@@ -147,7 +166,6 @@
 
 .todo-box1 {
   position: absolute;
-  /* z-index: 2; */
   width: 46.5rem;
   height: 5rem;
   left: 9.75rem;
@@ -155,8 +173,6 @@
   background: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 1px;
-
-  /* line-height: 1rem; */
   color: #172b4d;
 }
 
@@ -179,7 +195,6 @@
   background: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 1px;
-  /* padding-left: 4rem; */
   font-size: 1rem;
   font-weight: 500;
   line-height: 1rem;
@@ -240,17 +255,12 @@
   border: none;
 }
 
-/* .begin:hover {
-    color: #a5adba;
-  } */
-
 .resume {
   position: absolute;
   width: 4.2rem;
   height: 2rem;
   left: 40.3125rem;
   top: 0rem;
-  margin-left: 40.3125rem;
   margin-top: 1.5rem;
   margin-inline: 0.75rem 0.375rem;
   cursor: pointer;
@@ -258,29 +268,101 @@
   font-size: 0.85rem;
 }
 
-/* .resume:hover {
-    color: #ffffff;
-    background-color: #0052cc;
-  } */
-
-/* .todo1 {
+@media screen and (max-width: 768px) {
+  .dash-content {
+    height: 100%;
     position: absolute;
-    left: 9.75rem;
-    top: 28.5rem;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 8px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
-  
-  .todo2 {
+
+  .welcome {
+    left: auto;
+    right: auto;
+    top: 8rem;
+    margin: 0;
+    width: auto;
+    height: auto;
     position: absolute;
-    left: 9.75rem;
-    top: 34rem;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 8px 0px;
-  } */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome h1 {
+    width: auto;
+    height: 2.5rem;
+    position: relative;
+    left: 3rem;
+    right: auto;
+    top: 7rem;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome p {
+    width: auto;
+    height: 2.5rem;
+    position: relative;
+    left: 3rem;
+    right: auto;
+    top: 10rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .welcome-avatar {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    left: auto;
+    top: auto;
+    border-radius: 6.5625rem;
+  }
+
+  .todo h3 {
+    left: 3rem;
+  }
+
+  .todo-box1 {
+    left: 3rem;
+    width: 20rem;
+  }
+
+  .emp-perf {
+    margin-left: 2.5rem;
+  }
+
+  .circle1 {
+    margin-left: 0.5rem;
+  }
+
+  .todo-box2 {
+    left: 3rem;
+    width: 20rem;
+  }
+
+  .quart-rev {
+    margin-left: 3rem;
+  }
+
+  .circle2 {
+    margin-left: 0.5rem;
+  }
+
+  .begin {
+    margin-left: 15rem;
+    margin-top: 2.9rem;
+    padding: 0rem;
+  }
+
+  .resume {
+    margin-left: -25rem;
+    margin-top: 1.5rem;
+    padding: 0rem;
+  }
+}

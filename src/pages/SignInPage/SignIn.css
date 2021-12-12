@@ -13,7 +13,7 @@ body {
   margin-top: 0rem;
   height: 100%;
   color: #091e42;
-  width: 90rem;
+  max-width: 90rem;
 }
 
 .sign-in-logo {
@@ -27,7 +27,7 @@ body {
 .login-form {
   align-items: center;
   justify-content: center;
-  height: 31.5625rem;
+  height: auto;
   width: 30rem;
   text-decoration: none;
   outline: none;
@@ -36,7 +36,6 @@ body {
   z-index: 2;
   top: 10rem;
   left: 34%;
-  /* border: 1px black solid; */
 }
 
 .login-info h3 {
@@ -73,8 +72,12 @@ input {
   border-radius: 4px;
 }
 
+.email h4 {
+  margin-top: 3rem;
+}
+
 .e-field {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .password {
@@ -85,12 +88,47 @@ input {
   margin-top: 0.5rem;
 }
 
+.name-data {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.5rem;
+  position: absolute;
+  width: 12.3125rem;
+  height: auto;
+  left: 0px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+  margin-left: 50%;
+  padding-bottom: 1rem;
+}
+
+.email-data {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5rem;
+  position: absolute;
+  width: 20.3125rem;
+  height: 4.25rem;
+  left: 0rem;
+  top: calc(32% - 1.5rem / 2 - 0.5rem);
+  padding-left: 10rem;
+}
+
+.edit {
+  margin-left: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1.875rem;
+}
+
 .login-btn {
   display: flex;
   justify-content: center;
   position: relative;
   left: calc(50% - 400px / 2);
-  top: 5rem;
+  top: 6rem;
   width: 25rem;
   height: 2.5rem;
   text-align: center;
@@ -99,13 +137,8 @@ input {
   color: #ffffff;
 }
 
-/* .login-btn:hover {
-    background-color: #0052cc;
-    color: #ffffff;
-  } */
-
 hr {
-  margin-top: 7rem;
+  margin-top: 8rem;
   top: 0rem;
   left: calc(50% - 400px / 2);
   width: 25rem;
@@ -117,16 +150,13 @@ hr {
   display: flex;
   justify-content: center;
   top: 1.5rem;
+  margin-top: 0rem;
   color: #0052cc;
   font-size: 0.875rem;
   font-weight: 450;
   font-size: 0.875rem;
   cursor: pointer;
 }
-
-/* .forgot-password:hover {
-    color: #aaa;
-  } */
 
 .signIn-footer {
   width: 91rem;

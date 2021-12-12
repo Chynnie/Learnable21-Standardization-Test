@@ -13,7 +13,7 @@ import Footer from '../../svg/Footer.svg';
 
 function LandingPage() {
   return (
-    <div className="content">
+    <div className="land-content">
       <NavBar />
       <main>
         <section className="section1">

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './SignIn.css';
 import InputField from './InputField';
 import signInLogo from '../../svg/SignIn-Logo.svg';
 import signInFooter from '../../svg/SignIn-Footer.svg';
-import { useHistory } from 'react-router-dom';
+import edit from '../../../src/svg/edit-filled.svg';
 
 function SignIn() {
-  // const [email, setEmail] = useState('');
   const [formData, setFormData] = useState({
     name: 'Chinenye Jiwuaku',
     email: '',
@@ -20,7 +20,6 @@ function SignIn() {
         <div className="login-info">
           <h3>Log in</h3>
           <p>Access your resource edge account</p>
-          {/* <p>{ email }</p> */}
         </div>
         {formData.email && formData.selected ? (
           <PasswordForm formData={formData} />
@@ -62,8 +61,11 @@ const PasswordForm = ({ formData }) => {
   const history = useHistory();
   return (
     <form className="user-info">
-      <h5>{formData.name}</h5>
-      <h6>{formData.email}</h6>
+      <div className="email-data">
+        <h5 className="name-data">{formData.name}</h5>
+        <h6>{formData.email}</h6>
+        <img src={edit} alt="edit" className="edit" />
+      </div>
       <div className="password">
         <h4>Password</h4>
         <InputField
