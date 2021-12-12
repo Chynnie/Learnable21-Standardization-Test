@@ -118,9 +118,16 @@ input {
 }
 
 .edit {
-  margin-left: 1rem;
-  margin-top: 0rem;
-  margin-bottom: 1.875rem;
+  position: static;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 13.3125rem;
+  top: 0.5rem;
+  background: rgba(255, 255, 255, 0.0001);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 1rem 2rem;
 }
 
 .login-btn {
